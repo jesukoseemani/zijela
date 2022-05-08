@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.my-line {
+		background-color: #f7f7fc;
+		opacity: 0.8;
+		background-image: linear-gradient(#e2e2e4 0.5px, transparent 0.5px),
+			linear-gradient(to right, #e2e2e4 0.5px, #f7f7fc 0.5px);
+		background-size: 10px 10px;
+	}
+
+	.modalbackground {
+		background-color: #e5e5f7;
+		opacity: 0.8;
+		background-image: radial-gradient(#22c55e 0.5px, #e5e5f7 0.5px);
+		background-size: 10px 10px;
+	}
+}
+
+html {
+	font-size: 10px;
+}
