@@ -42,7 +42,7 @@ function Testimonial() {
 	];
 	return (
 		<div className='bg-[#F7F8F9] mt-[88px] my-line '>
-			<div className='max-w-[1440px] m-auto'>
+			<div className='max-w-[1150px] m-auto'>
 				<h3 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight pt-[126px]">
 					Testimonial from Zijela Students
 				</h3>

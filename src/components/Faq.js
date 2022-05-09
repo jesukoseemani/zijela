@@ -37,7 +37,7 @@ function Faq() {
 
 	return (
 		<>
-			<div className='max-w-[1440px] m-auto'>
+			<div className='max-w-[1150px] m-auto'>
 				<p className="font-['Poppins'] font-[500] text-[12px] text-[#22C55E] py-0.5 px-2 bg-[#DCFCE7] rounded-[36px] w-fit">
 					FAQ
 				</p>
@@ -57,7 +57,7 @@ function Faq() {
 				</div>
 			</div>
 			<div className='w-full bg-[#22C55E] h-[249px] mt-[300px] relative'>
-				<div className='bg-[#2A3342] rounded-md flex flex-col justify-center items-center space-y-6 py-14 absolute w-full max-w-[1440px] top-[-150px] left-[150px]'>
+				<div className='bg-[#2A3342] rounded-md flex flex-col justify-center items-center space-y-6 py-14 absolute w-full max-w-[1150px] top-[-150px] left-[150px]'>
 					<h2 className="font-['Poppins'] font-[700] text-[48px] text-white tracking-tight">
 						Have any additional questions?
 					</h2>
@@ -65,7 +65,7 @@ function Faq() {
 						Flex is a Small SaaS Business. Flex isn’t a traditional company.
 					</p>
 					<Link
-						to=''
+						to='/contact'
 						className="bg-[#22C55E] px-[28px] py-4 rounded-md font-['Poppins'] font-[500] text-[18px] text-[#F0FDF4]">
 						Get in Touch
 					</Link>

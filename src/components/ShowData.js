@@ -3,7 +3,7 @@ import Image1 from '../assets/last.png';
 
 function ShowData() {
 	return (
-		<div className='max-w-[1440px] m-auto'>
+		<div className='max-w-[1150px] m-auto'>
 			<div>
 				<h3 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight">
 					We believe in the power of data

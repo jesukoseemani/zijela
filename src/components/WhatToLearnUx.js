@@ -7,7 +7,7 @@ import Toggle from './Toggle';
 
 function WhatToLearnUx({ openModal }) {
 	return (
-		<div className='max-w-[1440px] m-auto relative'>
+		<div className='max-w-[1150px] m-auto relative'>
 			<div className='flex space-x-20'>
 				<div className='flex-1'>
 					<img
@@ -154,7 +154,6 @@ function WhatToLearnUx({ openModal }) {
 										<li>
 											Building tons of projects and building personal portfolio.
 										</li>
-										
 									</p>
 								</div>
 							</Toggle>
@@ -221,7 +220,7 @@ function WhatToLearnUx({ openModal }) {
 
 					<div className='mt-[40px]'>
 						<Link
-							to=''
+							to='/register'
 							className="bg-[#22C55E] px-7 py-4 rounded-md font-['Poppins'] font-[500] text-[18px] text-[#F0FDF4]">
 							Register Now
 						</Link>

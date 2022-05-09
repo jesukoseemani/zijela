@@ -12,7 +12,7 @@ import Image5 from '../assets/RIBY.svg';
 
 function Sponsor() {
 	return (
-		<div className='max-w-[1440px] m-auto'>
+		<div className='max-w-[1150px] m-auto'>
 			<div className='mb-[90px]'>
 				<p className="font-['Poppins'] font-[500] text-[16px] text-gray-300 mt-[88px] text-center">
 					{' '}

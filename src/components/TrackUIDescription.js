@@ -4,7 +4,7 @@ import Image1 from '../assets/middle.png';
 
 function TrackUIDescription() {
 	return (
-		<div className='max-w-[1440px] m-auto'>
+		<div className='max-w-[1150px] m-auto'>
 			<div className='w-full mt-[88px] mb-[152px] flex justify-between items-center'>
 				<div className='flex-1 '>
 					<img src={Image1} alt='' />
@@ -21,7 +21,7 @@ function TrackUIDescription() {
 					</p>
 					<div className='flex space-x-3'>
 						<Link
-							to=''
+							to='/ui_ux'
 							className="bg-[#22C55E] px-[18px] py-3 rounded-md font-['Poppins'] font-[500] text-[16px] text-[#F0FDF4]">
 							Get Started
 						</Link>

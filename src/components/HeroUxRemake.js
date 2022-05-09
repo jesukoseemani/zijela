@@ -5,7 +5,7 @@ import check from '../assets/Checkbox.svg';
 
 function HeroUxRemake({ openModal }) {
 	return (
-		<div className='max-w-[1440px] m-auto'>
+		<div className='max-w-[1150px] m-auto'>
 			<div className='w-full my-[125px] flex justify-between items-center'>
 				<div className='flex-1 space-y-14'>
 					<h2 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight">
@@ -52,7 +52,7 @@ function HeroUxRemake({ openModal }) {
 					</div>
 					<div className='flex space-x-3'>
 						<Link
-							to=''
+							to='/register'
 							className="bg-[#22C55E] px-7 py-4 rounded-md font-['Poppins'] font-[500] text-[18px] text-[#F0FDF4]">
 							Register
 						</Link>
@@ -66,7 +66,11 @@ function HeroUxRemake({ openModal }) {
 					</div>
 				</div>
 				<div className='flex-1 flex justify-end rounded-lg'>
-					<img src={Image1} alt='' className='w-[554px] h-[415px] object-cover'/>
+					<img
+						src={Image1}
+						alt=''
+						className='w-[554px] h-[415px] object-cover'
+					/>
 				</div>
 			</div>
 		</div>

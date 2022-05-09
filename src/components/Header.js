@@ -1,12 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Image from '../assets/gmh (1) 1.png';
-import { useNavigate } from 'react-router';
+
 
 function Header() {
-	const navigate = useNavigate();
 	return (
-		<div className='max-w-[1440px] m-auto'>
+		<div className='max-w-[1150px] m-auto'>
 			<div className='w-full h-[80px] bg-white flex justify-between items-center'>
 				<div></div>
 				<div className='flex flex-1 space-x-10 items-center justify-end'>

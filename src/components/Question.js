@@ -8,7 +8,7 @@ function Question() {
 				Any Question?
 			</h2>
 			<Link
-				to=''
+				to='/contact'
 				className="bg-[#22C55E] px-7 py-4 rounded-md font-['Poppins'] font-[500] text-[18px] text-[#F0FDF4] mt-[30px]">
 				Contact Us
 			</Link>

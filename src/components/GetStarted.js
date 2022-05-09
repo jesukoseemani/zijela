@@ -12,7 +12,7 @@ function GetStarted({ title, desc }) {
 			</p>
 			<div className='mt-10'>
 				<Link
-					to=''
+					to='/register'
 					className="bg-[#22C55E] px-7 py-4 rounded-md font-['Poppins'] font-[500] text-[18px] text-[#F0FDF4]">
 					Register
 				</Link>

@@ -30,7 +30,7 @@ function Choose() {
 		},
 	];
 	return (
-		<div className='max-w-[1440px] m-auto '>
+		<div className='max-w-[1150px] m-auto '>
 			<div className='mt-[150px]'>
 				<h1 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight">
 					Why Choose this program?
@@ -42,10 +42,10 @@ function Choose() {
 								<img src={item.image} alt='' className='rounded-md ' />
 							</div>
 							<div className='flex flex-col h-[300px] items-start'>
-								<h6 className="font-['Poppins'] font-[600] text-[30px] text-gray-900  ">
+								<h6 className="font-['Poppins'] font-[600] text-[20px] text-gray-900  ">
 									{item.title}
 								</h6>
-								<p className="font-['Poppins'] font-[400] text-[16px] text-gray-600 mt-[50px] ">
+								<p className="font-['Poppins'] font-[400] text-[14px] text-gray-600 mt-[50px] ">
 									{item.desc}
 								</p>
 							</div>

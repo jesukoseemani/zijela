@@ -33,7 +33,7 @@ function Footer() {
 				</div>
 			</div> */}
 			<div className='my-line mt-[88px] '>
-				<div className='max-w-[1440px] m-auto flex justify-between items-start h-[211px] pt-8 z-50'>
+				<div className='max-w-[1150px] m-auto flex justify-between items-start h-[211px] pt-8 z-50'>
 					<div className='flex-1 '>
 						<p className="font-['Poppins'] font-[500] text-[14px] text-[#000000] ">
 							© 2021 Flex. All rights reserved.

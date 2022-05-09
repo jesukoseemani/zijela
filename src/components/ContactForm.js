@@ -11,7 +11,7 @@ import linkedIn from '../assets/LinkedInC.svg';
 
 function ContactForm() {
 	return (
-		<div className='max-w-[1440px] m-auto'>
+		<div className='max-w-[1150px] m-auto'>
 			<ReUseHeader
 				title='CONTACT'
 				description='Let’s stay connected'

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Application from './components/Application';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
@@ -15,6 +16,7 @@ function App() {
 					<Route path='/ui_ux' element={<Ux />} />
 					<Route path='/web_development' element={<Wb />} />
 					<Route path='/contact' element={<Contact />} />
+					<Route path='/register' element={<Application />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
