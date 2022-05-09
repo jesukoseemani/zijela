@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import Application from './components/Application';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -9,7 +9,7 @@ import Wb from './pages/Wb';
 function App() {
 	return (
 		<div className='w-full m-auto scrollbar-hide'>
-			<BrowserRouter>
+			<HashRouter>
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about' element={<About />} />
@@ -18,7 +18,7 @@ function App() {
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/register' element={<Application />} />
 				</Routes>
-			</BrowserRouter>
+			</HashRouter>
 		</div>
 	);
 }
