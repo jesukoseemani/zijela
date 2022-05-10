@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function GetStarted({ title, desc }) {
+function GetStarted({ title, desc }) { 
 	return (
-		<div className='flex flex-col justify-center items-center h-[430px]'>
-			<h2 className="font-['Poppins'] font-[700] text-[36px] text-gray-900 tracking-tight">
+		<div className='flex flex-col justify-center items-center h-[430px] px-10 xl:px-0'>
+			<h2 className="font-['Poppins'] font-[700] text-[25px] md:text-[30px] lg:text-[36px] text-gray-900 tracking-tight">
 				The fastest way to learn {title}
 			</h2>
-			<p className="font-['Poppins'] font-[500] text-[20px] text-gray-500 mt-4 max-w-[919px] text-center">
+			<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500 mt-4 max-w-[919px] text-center">
 				{desc}
 			</p>
 			<div className='mt-10'>

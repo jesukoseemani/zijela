@@ -49,25 +49,25 @@ function Wb() {
 				onRequestClose={closeModal}
 				style={customStyles}
 				contentLabel='syllabus'>
-				<div className='modalbackground h-[99.8vh] scrollbar-hide'>
+				<div className='modalbackground h-[99.8vh] scrollbar-hide px-10 xl:px-0'>
 					<div
 						className='flex justify-end p-5 cursor-pointer'
 						onClick={closeModal}>
 						<img src={times} alt='' className='w-20 h-20 ' />
 					</div>
-					<div className='flex items-center space-x-5 p-[150px]'>
-						<div className='flex-1 '>
-							<h2 className="font-['Poppins'] font-[700] text-[58px] text-gray-900 tracking-tight">
+					<div className='flex flex-col xl:flex-row items-center xl:space-x-5 pt-[150px] xl:p-[150px]'>
+						<div className='flex-1 mb-14 xl:mb-0'>
+							<h2 className="font-['Poppins'] font-[700] text-[30px] sm:text-[38px] xl:text-[58px] text-gray-900 tracking-tight">
 								Download the Syllabus of
 								<br /> our program Front-end
 								<br /> with ReactJS
 							</h2>
-							<p className="font-['Poppins'] font-[500] text-[16px] text-gray-800 ">
+							<p className="font-['Poppins'] font-[500] text-[12px] xl:text-[16px] text-gray-800 ">
 								Register and receive the Syllabus by Email.
 							</p>
 						</div>
 
-						<div className='flex flex-col items-start p-10 bg-[#F7F8F9] w-[510px] rounded-lg'>
+						<div className='flex flex-col items-start p-10 bg-[#F7F8F9] w-full sm:w-[510px] rounded-lg'>
 							<div className='flex flex-col w-full my-6'>
 								<p className="font-['Poppins'] font-[500] text-[16px] text-gray-800  ">
 									First Name

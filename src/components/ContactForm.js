@@ -11,15 +11,15 @@ import linkedIn from '../assets/LinkedInC.svg';
 
 function ContactForm() {
 	return (
-		<div className='max-w-[1150px] m-auto'>
+		<div className='max-w-[1150px] m-auto px-10 xl:px-0'>
 			<ReUseHeader
 				title='CONTACT'
 				description='Let’s stay connected'
 				descriptionContent="It's never been easier to get in touch with Flex. Call us, use our live chat widget or email and we'll get back to you as soon as possible!"
 			/>
-			<div className='flex justify-center items-center my-[88px]'>
+			<div className='flex flex-col md:flex-row justify-center items-center my-[44px] sm:my-[88px]'>
 				<div className='flex-1 flex flex-wrap'>
-					<div className='w-[261px] h-[156px] mt-5 flex flex-col justify-start items-start space-y-8'>
+					<div className='w-1/2 h-full md:w-[261px] md:h-[156px] mt-5 flex flex-col justify-start items-start space-y-8'>
 						<div className='p-2 rounded-[50%] bg-[#22C55E] flex items-center justify-center'>
 							<img src={email} alt='' />
 						</div>
@@ -32,7 +32,7 @@ function ContactForm() {
 						</p>
 					</div>
 
-					<div className='w-[261px] h-[156px] mt-5 flex flex-col justify-start items-start space-y-8'>
+					<div className='w-1/2 h-full md:w-[261px] md:h-[156px] mt-5 flex flex-col justify-start items-start space-y-8'>
 						<div className='p-2 rounded-[50%] bg-[#22C55E] flex items-center justify-center'>
 							<img src={phone} alt='' />
 						</div>
@@ -45,7 +45,7 @@ function ContactForm() {
 						</p>
 					</div>
 
-					<div className='w-[261px] h-[156px] mt-5 flex flex-col justify-start items-start space-y-8'>
+					<div className='w-1/2 h-full md:w-[261px] md:h-[156px] mt-5 flex flex-col justify-start items-start space-y-8'>
 						<div className='p-2 rounded-[50%] bg-[#22C55E] flex items-center justify-center'>
 							<img src={location} alt='' />
 						</div>
@@ -58,7 +58,7 @@ function ContactForm() {
 						</p>
 					</div>
 
-					<div className='w-[261px] h-[156px] mt-5 flex flex-col justify-start items-start space-y-8'>
+					<div className='w-1/2 h-full md:w-[261px] md:h-[156px] mt-5 flex flex-col justify-start items-start space-y-8'>
 						<div className='p-2 rounded-[50%] bg-[#22C55E] flex items-center justify-center'>
 							<img src={social} alt='' />
 						</div>
@@ -90,7 +90,7 @@ function ContactForm() {
 						</div>
 					</div>
 				</div>
-				<div className='flex-1 flex flex-col items-start p-10 bg-[#F7F8F9] h-[512px]'>
+				<div className='w-full mt-14 md:mt-0 flex-1 flex flex-col items-start p-10 bg-[#F7F8F9] h-[512px]'>
 					<div className='flex flex-col w-full'>
 						<p className="font-['Poppins'] font-[500] text-[16px] text-gray-800  ">
 							Email

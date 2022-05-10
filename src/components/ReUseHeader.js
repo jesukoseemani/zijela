@@ -8,10 +8,10 @@ function ReUseHeader({ title, description, descriptionContent }) {
 					<p className="font-['Poppins'] font-[500] text-[12px] text-[#22C55E] py-0.5 px-2 bg-[#DCFCE7] rounded-[36px] w-fit">
 						{title}
 					</p>
-					<h2 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight ">
+					<h2 className="font-['Poppins'] font-[700] text-[35px] sm:text-[35px] md:text-[48px] text-gray-900 tracking-tight ">
 						{description}
 					</h2>
-					<p className="font-['Poppins'] font-[500] text-[20px] text-gray-500 w-[689px]">
+					<p className="font-['Poppins'] font-[500] text-[15px] sm:text-[15px] md:text-[20px] text-gray-500 sm:w-[689px] w-full">
 						{descriptionContent}
 					</p>
 				</div>

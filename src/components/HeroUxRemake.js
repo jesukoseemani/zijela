@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import Image1 from '../assets/undraw_design_sprint_re_tke3.svg';
 import check from '../assets/Checkbox.svg';
 
-function HeroUxRemake({ openModal }) {
+function HeroUxRemake({ openModal }) { 
 	return (
 		<div className='max-w-[1150px] m-auto'>
-			<div className='w-full my-[125px] flex justify-between items-center'>
+			<div className='w-full my-[50px] md:my-[125px] flex flex-col-reverse md:flex-row justify-between items-center px-10 xl:px-0'>
 				<div className='flex-1 space-y-14'>
-					<h2 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight">
+					<h2 className="font-['Poppins'] font-[700] text-[40px] md:text-[30px] xl:text-[60px] lg:text-[48px] text-gray-900 tracking-tight">
 						Become a UI/UX Designer
 					</h2>
 					<div>
@@ -17,7 +17,7 @@ function HeroUxRemake({ openModal }) {
 								<img src={check} alt='' />
 							</div>
 							<div>
-								<p className="font-['Poppins'] font-[500] text-[20px] text-gray-500">
+								<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500">
 									The UX Design course will allow you to acquire the knowledge
 									<br />
 									and tools necessary to understand
@@ -30,7 +30,7 @@ function HeroUxRemake({ openModal }) {
 								<img src={check} alt='' />
 							</div>
 							<div>
-								<p className="font-['Poppins'] font-[500] text-[20px] text-gray-500">
+								<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500">
 									You will learn how to carry out a good UX study,
 									<br /> how to use the different types of processes in order to
 									<br />
@@ -43,7 +43,7 @@ function HeroUxRemake({ openModal }) {
 								<img src={check} alt='' />
 							</div>
 							<div>
-								<p className="font-['Poppins'] font-[500] text-[20px] text-gray-500">
+								<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500">
 									Learn to produce practical and effective User Interface (UI)
 									designs.
 								</p>
@@ -65,7 +65,7 @@ function HeroUxRemake({ openModal }) {
 						</Link>
 					</div>
 				</div>
-				<div className='flex-1 flex justify-end rounded-lg'>
+				<div className='flex-1 md:justify-end justify-center mt-14 md:mt-0 rounded-lg'>
 					<img
 						src={Image1}
 						alt=''

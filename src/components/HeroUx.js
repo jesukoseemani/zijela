@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import Image1 from '../assets/foruidesign.png';
 import check from '../assets/Checkbox.svg';
 
-function HeroUx({title, openModal}) {
+function HeroUx({ title, openModal }) {
 	return (
 		<div className='max-w-[1150px] m-auto'>
-			<div className='w-full my-[125px] flex justify-between items-center'>
+			<div className='w-full my-[50px] md:my-[125px] flex flex-col md:flex-row justify-between items-center px-10 xl:px-0'>
 				<div className='flex-1 space-y-14'>
-					<h2 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight">
+					<h2 className="font-['Poppins'] font-[700] text-[40px] md:text-[30px] xl:text-[60px] lg:text-[48px] text-gray-900 tracking-tight">
 						Join 200+ students <br /> Learning {title}
 					</h2>
 					<div>
@@ -17,7 +17,7 @@ function HeroUx({title, openModal}) {
 								<img src={check} alt='' />
 							</div>
 							<div>
-								<p className="font-['Poppins'] font-[500] text-[20px] text-gray-500">
+								<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500">
 									One on one virtual mentoring.
 								</p>
 							</div>
@@ -27,7 +27,7 @@ function HeroUx({title, openModal}) {
 								<img src={check} alt='' />
 							</div>
 							<div>
-								<p className="font-['Poppins'] font-[500] text-[20px] text-gray-500">
+								<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500">
 									Hands on projects
 								</p>
 							</div>
@@ -37,7 +37,7 @@ function HeroUx({title, openModal}) {
 								<img src={check} alt='' />
 							</div>
 							<div>
-								<p className="font-['Poppins'] font-[500] text-[20px] text-gray-500">
+								<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500">
 									Internship/employment opportunities
 								</p>
 							</div>
@@ -58,7 +58,7 @@ function HeroUx({title, openModal}) {
 						</Link>
 					</div>
 				</div>
-				<div className='flex-1 flex justify-end'>
+				<div className='flex-1 flex md:justify-end justify-center mt-14 md:mt-0'>
 					<img src={Image1} alt='' />
 				</div>
 			</div>

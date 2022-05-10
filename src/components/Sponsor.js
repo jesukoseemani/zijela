@@ -18,20 +18,32 @@ function Sponsor() {
 					{' '}
 					Trusted by the top companies in this industry
 				</p>
-				<div className='flex items-center space-x-[65px] mt-[24px] w-full justify-center'>
+				<div className='flex flex-wrap md:flex-nowrap items-center space-y-10 md:space-y-0 space-x-[40px] lg:space-x-[65px] md:space-x-[40px] mt-[24px] w-full justify-center'>
 					<img
 						src={Image1}
 						alt=''
-						className='w-[184px] h-[48px] object-contain'
+						className='w-[120px] max-w-[184px] md:w-[120px] h-[48px] object-contain '
 					/>
-					<img src={Image2} alt='' className='w-[184px] h-[48px]' />
+					<img
+						src={Image2}
+						alt=''
+						className='w-[120px] max-w-[184px] md:w-[120px] h-[48px] object-contain'
+					/>
 					<img
 						src={Image3}
 						alt=''
-						className='w-[184px] h-[48px] object-contain'
+						className='w-[120px] max-w-[184px] md:w-[120px] h-[48px] object-contain'
 					/>
-					<img src={Image4} alt='' className='w-[184px] h-[48px]' />
-					<img src={Image5} alt='' className='w-[184px] h-[48px]' />
+					<img
+						src={Image4}
+						alt=''
+						className='w-[120px] max-w-[184px] md:w-[120px] h-[48px] object-contain'
+					/>
+					<img
+						src={Image5}
+						alt=''
+						className='w-[120px] max-w-[184px] md:w-[120px] h-[48px] object-contain'
+					/>
 				</div>
 			</div>
 		</div>
