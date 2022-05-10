@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.7b2f3e2b.css",
-    "main.js": "./static/js/main.af95b134.js",
+    "main.css": "./static/css/main.5ab6df34.css",
+    "main.js": "./static/js/main.004cd2b5.js",
     "static/js/787.8b728e04.chunk.js": "./static/js/787.8b728e04.chunk.js",
     "static/media/john-schnobrich-2FPjlAyMQTA-unsplash.jpg": "./static/media/john-schnobrich-2FPjlAyMQTA-unsplash.26cb540ede2b7051b6f2.jpg",
     "static/media/top.png": "./static/media/top.a297d12b2013b08f926e.png",
@@ -18,6 +18,7 @@
     "static/media/undraw_online_discussion_re_nn7e.svg": "./static/media/undraw_online_discussion_re_nn7e.3f81808d7ddf2449bf603ceca342acc8.svg",
     "static/media/undraw_experience_design_eq-3-j.svg": "./static/media/undraw_experience_design_eq-3-j.09156709f55162923ea70286e9efd81c.svg",
     "static/media/undraw_design_sprint_re_tke3.svg": "./static/media/undraw_design_sprint_re_tke3.d74506abe6a98dc0adc69a3aa322902b.svg",
+    "static/media/undraw_code_thinking_re_gka2 (1).svg": "./static/media/undraw_code_thinking_re_gka2 (1).d98ce6b673d1346f6d21f1f474ab8d29.svg",
     "static/media/paystack-2.svg": "./static/media/paystack-2.21a0667a62d2708f324e4fb25085e1eb.svg",
     "static/media/admitted.svg": "./static/media/admitted.dac9ef6538f2c1044bc82ce914191704.svg",
     "static/media/started.svg": "./static/media/started.820e20ebffd1e5b1aed50d71117dc5ae.svg",
@@ -34,9 +35,9 @@
     "static/media/Location.svg": "./static/media/Location.8e8f66af0bba4c989bfbd79f9e8259e2.svg",
     "static/media/Checkbox.svg": "./static/media/Checkbox.cf04b9ffab9a74c94a919818a132fead.svg",
     "static/media/email.svg": "./static/media/email.8d3a6e4f3d019d124139ddabefff1d2e.svg",
+    "index.html": "./index.html",
     "static/media/Facebook.svg": "./static/media/Facebook.f4a4bfad63a85bf3b37958ed227b53f0.svg",
     "static/media/FacebookC.svg": "./static/media/FacebookC.abba5ab6ff90c18df625cb1ba3d034db.svg",
-    "index.html": "./index.html",
     "static/media/LinkedIn.svg": "./static/media/LinkedIn.dbd18e576814ca837d330d23cb3e67dc.svg",
     "static/media/LinkedInC.svg": "./static/media/LinkedInC.8d91ba68d01ab023c599d5ff24cd7feb.svg",
     "static/media/social.svg": "./static/media/social.16aeb6eea0b85ca799e940e342a9ec06.svg",
@@ -44,12 +45,12 @@
     "static/media/chevron-up-outline.svg": "./static/media/chevron-up-outline.99c0a5983627e2e09bdc95260cab4070.svg",
     "static/media/chevron-down-outline (1).svg": "./static/media/chevron-down-outline (1).adeda2e8053318ce2df9231a6a25a9e7.svg",
     "static/media/close-outline (1).svg": "./static/media/close-outline (1).06cdf2fdfaa846be640665c476f77d3c.svg",
-    "main.7b2f3e2b.css.map": "./static/css/main.7b2f3e2b.css.map",
-    "main.af95b134.js.map": "./static/js/main.af95b134.js.map",
+    "main.5ab6df34.css.map": "./static/css/main.5ab6df34.css.map",
+    "main.004cd2b5.js.map": "./static/js/main.004cd2b5.js.map",
     "787.8b728e04.chunk.js.map": "./static/js/787.8b728e04.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b2f3e2b.css",
-    "static/js/main.af95b134.js"
+    "static/css/main.5ab6df34.css",
+    "static/js/main.004cd2b5.js"
   ]
 }
