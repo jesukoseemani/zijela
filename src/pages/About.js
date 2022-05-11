@@ -6,8 +6,9 @@ import Faq from '../components/Faq';
 import Team from '../components/Team';
 import HeroAbout from '../components/HeroAbout';
 import GetReady from '../components/GetReady';
-import Choose from '../components/Choose';
-import HowItWork from '../components/HowItWork';
+import AboutDes from '../components/AboutDes';
+// import Choose from '../components/Choose';
+// import HowItWork from '../components/HowItWork';
 
 function About() {
 	return (
@@ -16,13 +17,13 @@ function About() {
 
 			<HeroAbout />
 
+			<AboutDes />
+
 			<Sponsor />
 
-			<Choose />
-
-			<HowItWork />
-
+			{/* <Choose /> */}
 			<Team />
+			{/* <HowItWork /> */}
 
 			<Faq />
 

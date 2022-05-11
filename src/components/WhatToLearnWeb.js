@@ -20,9 +20,9 @@ function WhatToLearnWeb({ openModal }) {
 							What you will learn:
 						</h2>
 						<div className='mt-[40px]'>
-							<div className='flex space-x-3 items-center mb-10'>
-								<div>
-									<img src={check} alt='' />
+							<div className='flex space-x-3 items-start mb-10'>
+								<div className='flex mt-1'>
+									<img src={check} alt='' className='flex' />
 								</div>
 								<div>
 									<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500">
@@ -30,8 +30,8 @@ function WhatToLearnWeb({ openModal }) {
 									</p>
 								</div>
 							</div>
-							<div className='flex space-x-3 items-center mb-10'>
-								<div>
+							<div className='flex space-x-3 items-start mb-10'>
+								<div className='flex mt-1'>
 									<img src={check} alt='' />
 								</div>
 								<div>
@@ -40,8 +40,8 @@ function WhatToLearnWeb({ openModal }) {
 									</p>
 								</div>
 							</div>
-							<div className='flex space-x-3 items-center mb-10'>
-								<div>
+							<div className='flex space-x-3 items-start mb-10'>
+								<div className='flex mt-1'>
 									<img src={check} alt='' />
 								</div>
 								<div>
@@ -50,8 +50,8 @@ function WhatToLearnWeb({ openModal }) {
 									</p>
 								</div>
 							</div>
-							<div className='flex space-x-3 items-center mb-10'>
-								<div>
+							<div className='flex space-x-3 items-start mb-10'>
+								<div className='flex mt-1'>
 									<img src={check} alt='' />
 								</div>
 								<div>
@@ -61,8 +61,8 @@ function WhatToLearnWeb({ openModal }) {
 									</p>
 								</div>
 							</div>
-							<div className='flex space-x-3 items-center mb-10'>
-								<div>
+							<div className='flex space-x-3 items-start mb-10'>
+								<div className='flex mt-1'>
 									<img src={check} alt='' />
 								</div>
 								<div>
@@ -71,8 +71,8 @@ function WhatToLearnWeb({ openModal }) {
 									</p>
 								</div>
 							</div>
-							<div className='flex space-x-3 items-center mb-10'>
-								<div>
+							<div className='flex space-x-3 items-start mb-10'>
+								<div className='flex mt-1'>
 									<img src={check} alt='' />
 								</div>
 								<div>

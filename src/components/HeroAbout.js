@@ -35,13 +35,13 @@ function HeroAbout() {
 						to create a rich portfolio and acquire technical skills to add to
 						your CV.
 					</p>
-					<div className='flex space-x-3'>
+					{/* <div className='flex space-x-3'>
 						<Link
 							to='/register'
 							className="bg-[#22C55E] px-7 py-4 rounded-md font-['Poppins'] font-[500] text-[15px] md:text-[18px] text-[#F0FDF4]">
 							Register to begin
 						</Link>
-					</div>
+					</div> */}
 				</div>
 				<div className='flex-1 flex justify-start mt-14 md:mt-0 md:justify-end'>
 					<img
