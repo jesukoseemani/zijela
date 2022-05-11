@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "./static/css/main.07a44f0f.css",
-    "main.js": "./static/js/main.7774a2d7.js",
+    "main.js": "./static/js/main.e95ecd98.js",
     "static/js/787.8b728e04.chunk.js": "./static/js/787.8b728e04.chunk.js",
     "static/media/john-schnobrich-2FPjlAyMQTA-unsplash.jpg": "./static/media/john-schnobrich-2FPjlAyMQTA-unsplash.26cb540ede2b7051b6f2.jpg",
+    "static/media/daniel-charles-hextall-6LqEzeYigGY-unsplash (1).jpg": "./static/media/daniel-charles-hextall-6LqEzeYigGY-unsplash (1).067eaa04caf6f5f7392c.jpg",
     "static/media/top.png": "./static/media/top.a297d12b2013b08f926e.png",
     "static/media/middle.png": "./static/media/middle.53ebe58f5c1c0b735a24.png",
     "static/media/foruidesign.png": "./static/media/foruidesign.c764fadde198f17ce45e.png",
@@ -12,24 +13,16 @@
     "static/media/team.png": "./static/media/team.c50664e3b1ea9dbf268e.png",
     "static/media/whattolearn.jpeg": "./static/media/whattolearn.aca288b0950ddc9e0847.jpeg",
     "static/media/INFRACTURE.jpeg": "./static/media/INFRACTURE.adaee2aceb46a59394ad.jpeg",
-    "static/media/undraw_community_re_cyrm.svg": "./static/media/undraw_community_re_cyrm.097ac0fca10b714cd51ccb84d1d4abb3.svg",
-    "static/media/undraw_people_re_8spw.svg": "./static/media/undraw_people_re_8spw.cd1515335a570f9547ce4538411fd162.svg",
-    "static/media/undraw_social_interaction_re_dyjh.svg": "./static/media/undraw_social_interaction_re_dyjh.fdad4c49fdc114f9271652129146911f.svg",
-    "static/media/undraw_online_discussion_re_nn7e.svg": "./static/media/undraw_online_discussion_re_nn7e.3f81808d7ddf2449bf603ceca342acc8.svg",
     "static/media/undraw_experience_design_eq-3-j.svg": "./static/media/undraw_experience_design_eq-3-j.09156709f55162923ea70286e9efd81c.svg",
     "static/media/undraw_design_sprint_re_tke3.svg": "./static/media/undraw_design_sprint_re_tke3.d74506abe6a98dc0adc69a3aa322902b.svg",
     "static/media/undraw_code_thinking_re_gka2 (1).svg": "./static/media/undraw_code_thinking_re_gka2 (1).d98ce6b673d1346f6d21f1f474ab8d29.svg",
     "static/media/paystack-2.svg": "./static/media/paystack-2.21a0667a62d2708f324e4fb25085e1eb.svg",
-    "static/media/admitted.svg": "./static/media/admitted.dac9ef6538f2c1044bc82ce914191704.svg",
-    "static/media/started.svg": "./static/media/started.820e20ebffd1e5b1aed50d71117dc5ae.svg",
     "static/media/office.svg": "./static/media/office.b5dd918eafa97d5204186ec19b6df057.svg",
-    "static/media/apply.svg": "./static/media/apply.bf776a1357cd2231496ef7e0d394b091.svg",
     "static/media/Telephone.svg": "./static/media/Telephone.6b2847f419b6ff7d2d34d13d5d081f39.svg",
     "static/media/transfer.svg": "./static/media/transfer.11bc766d7bc55ffad2eb3bb97e8dc91a.svg",
     "static/media/RIBY.svg": "./static/media/RIBY.86ead1e538624efc3be712cefb82128f.svg",
     "static/media/Twitter.svg": "./static/media/Twitter.a310542ddd016bcd2d62e6744b5c796e.svg",
     "static/media/TwitterC.svg": "./static/media/TwitterC.ede740576c7a395c1531601965237de4.svg",
-    "static/media/assessed.svg": "./static/media/assessed.8be93b7c1f963b0ef69bdde125a7f6a0.svg",
     "static/media/Instagram.svg": "./static/media/Instagram.9d967cbb31c6a4709310dd43cd3cb4c2.svg",
     "static/media/InstagramC.svg": "./static/media/InstagramC.9de1b45469fe32652dd4b8ecd0ecb256.svg",
     "static/media/Location.svg": "./static/media/Location.8e8f66af0bba4c989bfbd79f9e8259e2.svg",
@@ -46,11 +39,11 @@
     "static/media/chevron-down-outline (1).svg": "./static/media/chevron-down-outline (1).adeda2e8053318ce2df9231a6a25a9e7.svg",
     "static/media/close-outline (1).svg": "./static/media/close-outline (1).06cdf2fdfaa846be640665c476f77d3c.svg",
     "main.07a44f0f.css.map": "./static/css/main.07a44f0f.css.map",
-    "main.7774a2d7.js.map": "./static/js/main.7774a2d7.js.map",
+    "main.e95ecd98.js.map": "./static/js/main.e95ecd98.js.map",
     "787.8b728e04.chunk.js.map": "./static/js/787.8b728e04.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07a44f0f.css",
-    "static/js/main.7774a2d7.js"
+    "static/js/main.e95ecd98.js"
   ]
 }
