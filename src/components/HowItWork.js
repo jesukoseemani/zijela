@@ -7,9 +7,9 @@ import started from '../assets/started.svg';
 
 import line from '../assets/linedesign.svg'
 
-function HowItWork() {
+function HowItWork() { 
   return (
-		<div className='max-w-[1150px] m-auto '>
+		<div className='max-w-[1150px] m-auto px-10 xl:px-0'>
 			<div>
 				<h2 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight">
 					How it works

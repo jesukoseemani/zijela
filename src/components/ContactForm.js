@@ -99,7 +99,7 @@ function ContactForm() {
 							name='email'
 							type='text'
 							placeholder='YourEmail@email.com'
-							className='py-4 pl-3 border border-solid border-[#D5DAE1] rounded-md mt-[6px]'
+							className='py-6 pl-3 border border-solid border-[#D5DAE1] rounded-md mt-[6px]'
 						/>
 					</div>
 					<div className='flex flex-col mt-5 w-full'>
@@ -114,7 +114,7 @@ function ContactForm() {
 						/>
 					</div>
 
-					<button className='w-full bg-[#22C55E] outline-none rounded-md text-white py-[14px] mt-6'>
+					<button className='w-full bg-[#22C55E] outline-none rounded-md text-white py-[14px] text-[18px] mt-14'>
 						Send
 					</button>
 				</div>

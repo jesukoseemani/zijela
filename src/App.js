@@ -10,7 +10,7 @@ import Wb from './pages/Wb';
 function App() {
 	return (
 		<div className='w-full m-auto scrollbar-hide'>
-			<BrowserRouter>
+			<HashRouter>
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about' element={<About />} />
@@ -20,7 +20,7 @@ function App() {
 					<Route path='/register' element={<Application />} />
 					<Route path='/success' element={<Submitted />} />
 				</Routes>
-			</BrowserRouter>
+			</HashRouter>
 		</div>
 	);
 }

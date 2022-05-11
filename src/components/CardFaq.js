@@ -3,7 +3,7 @@ import Image from '../assets/Outline.png';
 
 function CardFaq({ item }) {
 	return (
-		<div className='w-[360px] h-[238px] flex flex-col justify-start items-start space-y-8'>
+		<div className='w-full lg:w-[359px] h-fit lg:h-[238px] flex flex-col justify-start items-start space-y-8'>
 			<div className='p-2 rounded-[50%] bg-[#22C55E] flex items-center justify-center'>
 				<img src={Image} alt='' />
 			</div>

@@ -37,13 +37,13 @@ function Team() {
 		},
 	];
   return (
-		<div className='max-w-[1150px] m-auto'>
+		<div className='max-w-[1150px] m-auto px-10 xl:px-0'>
 			<ReUseHeader
 				title='TEAM'
 				description='Meet our team'
 				descriptionContent='Highly professional and capable of running your business across all digital channels.'
 			/>
-			<div className='grid grid-cols-3 py-[64px] gap-4 justify-items-center '>
+			<div className='w-full grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 px-10 xl:px-0 xl:grid-cols-3 py-[64px] gap-4 justify-items-center '>
 				{data.map((item) => (
 					<div className='w-[359px] rounded-md bg-white flex flex-col items-start justify-between '>
 						<div>

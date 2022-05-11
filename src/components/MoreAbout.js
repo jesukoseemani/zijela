@@ -11,7 +11,7 @@ function MoreAbout({
 	const [focused, setFocused] = useState({
 		employed: false,
 		studying_prof: false,
-		comment: false,
+		comment: false, 
 	});
 
 	const handleBlur = (value) => {

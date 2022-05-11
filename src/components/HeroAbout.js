@@ -5,13 +5,13 @@ import image from '../assets/john-schnobrich-2FPjlAyMQTA-unsplash.jpg';
 function HeroAbout() {
 	return (
 		<div className='max-w-[1150px] m-auto'>
-			<div className='w-full my-[125px] flex justify-between items-center'>
-				<div className='flex-1'>
-					<h2 className="font-['Poppins'] font-[700] text-[60px] text-gray-900 tracking-tight">
+			<div className='w-full my-[125px] flex flex-col md:flex-row justify-between items-center px-10 xl:px-0'>
+				<div className='flex-1 mr-5 xl:mr-0'>
+					<h2 className="font-['Poppins'] font-[700] text-[40px] md:text-[40px] xl:text-[60px] lg:text-[50px] text-gray-900 tracking-tight">
 						Put Your Career
 						<br /> First...
 					</h2>
-					<p className="font-['Poppins'] font-[500] text-[20px] text-gray-500 mt-6 mb-8  ">
+					<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500 mt-6 mb-8  ">
 						Our vision here at
 						<span
 							style={{
@@ -38,16 +38,16 @@ function HeroAbout() {
 					<div className='flex space-x-3'>
 						<Link
 							to='/register'
-							className="bg-[#22C55E] px-7 py-4 rounded-md font-['Poppins'] font-[500] text-[18px] text-[#F0FDF4]">
+							className="bg-[#22C55E] px-7 py-4 rounded-md font-['Poppins'] font-[500] text-[15px] md:text-[18px] text-[#F0FDF4]">
 							Register to begin
 						</Link>
 					</div>
 				</div>
-				<div className='flex-1 flex justify-end '>
+				<div className='flex-1 flex justify-start mt-14 md:mt-0 md:justify-end'>
 					<img
 						src={image}
 						alt=''
-						className='w-[554px] h-[464px] object-cover rounded-[10px]'
+						className='w-full md:w-[554px] h-[464px] object-cover rounded-[10px]'
 					/>
 				</div>
 			</div>

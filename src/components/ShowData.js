@@ -16,13 +16,13 @@ function ShowData() {
 					<div className='flex-1 flex items-center justify-start flex-wrap'>
 						<div className='w-[262px] h-[162px] flex flex-col justify-center items-center text-center mt-8'>
 							<h3 className="font-['Poppins'] font-[700] text-[35px] md:text-[35px] lg:text-[48px] text-gray-900 tracking-tight">
-								2300
+								+300
 							</h3>
 							<p className="font-['Poppins'] font-[500] text-[20px] text-gray-800  ">
 								Trainess
 							</p>
 							<p className="font-['Poppins'] font-[500] text-[16px] text-gray-500  ">
-								Here you can talk about any people you’ve trained
+								Students trained on the most trendy technologies on the market.
 							</p>
 						</div>
 
@@ -34,32 +34,32 @@ function ShowData() {
 								Projects
 							</p>
 							<p className="font-['Poppins'] font-[500] text-[16px] text-gray-500  ">
-								{' '}
-								Here the projects the students have worked on
+							
+								We undergo 60days of coding challenges, creating real-world projects
 							</p>
 						</div>
 
 						<div className='w-[262px] h-[162px] flex flex-col justify-center items-center text-center mt-8'>
 							<h3 className="font-['Poppins'] font-[700] text-[35px] md:text-[35px] lg:text-[48px] text-gray-900 tracking-tight">
-								1500
+								+100
 							</h3>
 							<p className="font-['Poppins'] font-[500] text-[20px] text-gray-800  ">
 								Employed
 							</p>
 							<p className="font-['Poppins'] font-[500] text-[16px] text-gray-500  ">
-								The students that are employed and blah blah{' '}
+								We have students who works with growing startups & big firms.
 							</p>
 						</div>
 
 						<div className='w-[262px] h-[162px] flex flex-col justify-center items-center text-center ml-8 mt-8'>
 							<h3 className="font-['Poppins'] font-[700] text-[35px] md:text-[35px] lg:text-[48px] text-gray-900 tracking-tight">
-								300
+								+50
 							</h3>
 							<p className="font-['Poppins'] font-[500] text-[20px] text-gray-800  ">
 								Partners
 							</p>
 							<p className="font-['Poppins'] font-[500] text-[16px] text-gray-500  ">
-								Companies you partner with to get employment for students.
+								We have quite a number of recruiting partners who trust our students.
 							</p>
 						</div>
 					</div>

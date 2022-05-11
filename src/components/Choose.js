@@ -1,10 +1,8 @@
 import React from 'react';
 import image1 from '../assets/undraw_social_interaction_re_dyjh.svg';
-import image2 from '../assets/undraw_people_re_8spw.svg'
+import image2 from '../assets/undraw_people_re_8spw.svg';
 import image3 from '../assets/undraw_community_re_cyrm.svg';
 import image4 from '../assets/undraw_online_discussion_re_nn7e.svg';
-
-
 
 function Choose() {
 	const data = [
@@ -30,12 +28,12 @@ function Choose() {
 		},
 	];
 	return (
-		<div className='max-w-[1150px] m-auto '>
+		<div className='max-w-[1150px] m-auto px-10 xl:px-0'>
 			<div className='mt-[150px]'>
-				<h1 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight">
+				<h1 className="font-['Poppins'] font-[700] text-[35px] md:text-[35px] lg:text-[48px] text-gray-900 tracking-tight">
 					Why Choose this program?
 				</h1>
-				<div className='grid grid-cols-4 py-[64px] gap-12 '>
+				<div className='w-full grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 lg:justify-center pt-[64px] px-10 xl:px-0 gap-12 '>
 					{data.map((item) => (
 						<div className=' rounded-md bg-white flex flex-col items-start justify-between '>
 							<div>

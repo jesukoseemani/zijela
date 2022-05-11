@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function PersonalDetails({
 	handleChange,
@@ -7,6 +7,7 @@ function PersonalDetails({
 	values,
 	errors,
 	setErrors,
+	formOne,
 }) {
 	const [focused, setFocused] = useState({
 		firstName: false,
@@ -28,8 +29,8 @@ function PersonalDetails({
 	return (
 		<div>
 			<form className='form'>
-				<div className='flex items-center space-x-5'>
-					<div className='flex-1 flex flex-col w-full mt-[60px]'>
+				<div className='w-full flex flex-col xl:flex-row items-center '>
+					<div className='flex-1 flex flex-col w-full mt-[10px] xl:mt-[60px]'>
 						<label className="font-['Poppins'] font-[500] text-[20px] text-gray-800  ">
 							First Name
 						</label>
@@ -51,7 +52,7 @@ function PersonalDetails({
 						</span>
 					</div>
 
-					<div className='flex-1 flex flex-col w-full mt-[60px]'>
+					<div className='flex-1 flex flex-col w-full mt-[10px] xl:mt-[60px]'>
 						<label className="font-['Poppins'] font-[500] text-[20px] text-gray-800  ">
 							Last Name
 						</label>
@@ -83,7 +84,7 @@ function PersonalDetails({
 						type='text'
 						name='email'
 						// placeholder='Enter your last name'
-						value={values.email}
+						value={formOne?.email}
 						onChange={handleChange}
 						disabled
 					/>
@@ -110,7 +111,7 @@ function PersonalDetails({
 						{errors?.phone}
 					</span>
 				</div>
-				<div className='flex items-center space-x-5'>
+				<div className='flex items-center flex-col sm:flex-row sm:space-x-5 '>
 					<div className='flex flex-col w-full mt-[10px]'>
 						<label className="font-['Poppins'] font-[500] text-[20px] text-gray-800  ">
 							Gender
@@ -166,7 +167,7 @@ function PersonalDetails({
 					</div>
 				</div>
 
-				<div className='flex items-center space-x-5'>
+				<div className='flex flex-col sm:flex-row  items-center sm:space-x-5 '>
 					<div className='flex flex-col w-full mt-[10px]'>
 						<label className="font-['Poppins'] font-[500] text-[20px] text-gray-800  ">
 							Country

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 function Device({
 	handleChange,
 	handleSubmit,
-	values,
+	values, 
 	errors,
 	setErrors,
 	validate,

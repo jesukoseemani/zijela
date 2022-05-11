@@ -15,9 +15,9 @@ function TrackUIDescription() {
 						Learn <br /> UI/UX Design
 					</h2>
 					<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500 mt-8 mb-[25px] ">
-						With our integrated CRM, project management, collaboration and
-						invoicing capabilities, you can manage every aspect of your business
-						in one secure platform.
+						Transform concepts and ideas into designs that influence business
+						results and delve into the world of creating amazing digital
+						products.
 					</p>
 					<div className='flex space-x-3'>
 						<Link

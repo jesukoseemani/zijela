@@ -37,31 +37,31 @@ function Faq() {
 
 	return (
 		<>
-			<div className='max-w-[1150px] m-auto'>
+			<div className='max-w-[1150px] m-auto px-10 xl:px-0'>
 				<p className="font-['Poppins'] font-[500] text-[12px] text-[#22C55E] py-0.5 px-2 bg-[#DCFCE7] rounded-[36px] w-fit">
 					FAQ
 				</p>
 
-				<h2 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight py-4">
+				<h2 className="font-['Poppins'] font-[700] text-[35px] md:text-[35px] lg:text-[48px] text-gray-900 tracking-tight py-4">
 					Frequently Asked Questions
 				</h2>
-				<p className="font-['Poppins'] font-[500] text-[20px] text-gray-500  ">
+				<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500  ">
 					Here are a few answers to our most common questions.
 					<br /> We know you have questions about our program, that’s why
 					<br /> we’re answering a few of them here straight away!
 				</p>
-				<div className='grid grid-cols-3 gap-5 mt-14'>
+				<div className='w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-1 gap-5 mt-14 '>
 					{data.map((item) => (
 						<CardFaq item={item} />
 					))}
 				</div>
 			</div>
-			<div className='w-full bg-[#22C55E] h-[249px] mt-[300px] relative'>
-				<div className='bg-[#2A3342] rounded-md flex flex-col justify-center items-center space-y-6 py-14 absolute w-full max-w-[1150px] top-[-150px] left-[150px]'>
-					<h2 className="font-['Poppins'] font-[700] text-[48px] text-white tracking-tight">
+			<div className='w-full bg-[#22C55E] h-[249px] mt-[200px] lg:mt-[300px] relative'>
+				<div className='bg-[#2A3342] rounded-md flex flex-col justify-center items-center space-y-6 py-14 absolute max-w-[1150px] w-[90%] lg:w-[1024px] md:w-[768px] sm:w-[640px] top-[-150px] left-0 right-0 mr-auto ml-auto'>
+					<h2 className="font-['Poppins'] font-[700] text-[35px] md:text-[35px] lg:text-[48px] text-center md:text-left text-white tracking-tight">
 						Have any additional questions?
 					</h2>
-					<p className="font-['Poppins'] font-[400] text-[20px] text-gray-500  ">
+					<p className="font-['Poppins'] font-[400] text-[15px] md:text-[15px] lg:text-[20px] text-center text-gray-500 md:text-left ">
 						Flex is a Small SaaS Business. Flex isn’t a traditional company.
 					</p>
 					<Link

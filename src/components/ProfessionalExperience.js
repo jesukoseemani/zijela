@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function ProfessionalExperience({
 	handleChange,
-	handleSubmit,
+	handleSubmit, 
 	validate,
 	values,
 	errors,
@@ -26,7 +26,7 @@ function ProfessionalExperience({
 			<form className='form'>
 				<div className='flex flex-col w-full mt-[60px]'>
 					<label className="font-['Poppins'] font-[500] text-[20px] text-gray-800  ">
-						Select the category that best describes yous
+						Select the category that best describes you
 					</label>
 					<select
 						className='py-4 pl-8 border border-solid border-[#D5DAE1] rounded-md mt-[6px] text-[15px]'

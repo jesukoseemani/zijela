@@ -6,7 +6,7 @@ import payment from '../assets/transfer.svg';
 function Payment() { 
 	return (
 		<div className='max-w-[1150px] m-auto relative border-r border-b rounded-md mt-[160px] px-10 xl:px-0'>
-			<div className='hidden sm:block w-1/2 border border-solid bg-[#22C55E] h-[150px] absolute top-[-75px] right-10 rounded-xl '>
+			<div className='hidden sm:block w-1/2 border border-solid bg-[#22C55E] h-[150px] absolute top-[-75px] right-10 lg:right-0 rounded-xl '>
 				<h2 className="font-['Poppins'] font-[500] text-[18px] text-gray-900 tracking-tight p-5">
 					Need advice ?<br /> Contact our admissions team for help!
 				</h2>

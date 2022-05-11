@@ -14,11 +14,13 @@ function Application() {
 	const [isSubmitted, setIsSubmitted] = useState(false);
 	const [active, setActive] = useState(false);
 	const [formOneError, setFormOneError] = useState();
+	const [formSOne, setFormSOne] = useState();
 
 	useEffect(() => {
 		const formOne = JSON.parse(localStorage.getItem('formOne'));
 		if (formOne && formOne.track !== '' && formOne.email !== '') {
 			setActive(true);
+			setFormSOne(formOne);
 		}
 	}, []);
 
@@ -64,7 +66,7 @@ function Application() {
 					errors={errors}
 					setErrors={setErrors}
 					validate={validate}
-				
+					formOne={formSOne}
 				/>
 			);
 		} else if (page === 1) {
@@ -111,8 +113,8 @@ function Application() {
 
 	return (
 		<div className='bg-gray-100 w-full'>
-			<div className='max-w-[1440px] m-auto h-screen flex'>
-				<div className='py-[30px] h-screen w-[750px] flex flex-col justify-center'>
+			<div className='max-w-[1440px] m-auto min-h-screen flex px-10'>
+				<div className='hidden lg:flex py-[30px] h-screen w-[750px] flex-col justify-center'>
 					<Link
 						to='/'
 						className="font-['Tapestry'] font-900 text-[40px] tracking-widest cursor-pointer">
@@ -122,11 +124,24 @@ function Application() {
 						<img src={image} alt='' className='h-[400px] w-[90%]' />
 					</div>
 				</div>
-				<div className={`${active ? 'hidden' : 'flex'} bg-gray-100 w-full `}>
+				<div
+					className={`${
+						active ? 'hidden' : 'flex'
+					} flex-col md:flex-row bg-gray-100 w-full `}>
+					<Link
+						to='/'
+						className="md:hidden font-['Tapestry'] font-900 text-[40px] tracking-widest cursor-pointer">
+						{sym} ZIJELA
+					</Link>
 					<div className='h-[600px] m-auto'>
 						<div>
+							{/* <Link
+								to='/'
+								className="md:hidden font-['Tapestry'] font-900 text-[40px] tracking-widest cursor-pointer">
+								{sym} ZIJELA
+							</Link> */}
 							<div>
-								<h2 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight">
+								<h2 className="font-['Poppins'] font-[700] text-[30px] mt-[34px] md:text-[30px] lg:mt-0 lg:text-[48px] text-gray-900 tracking-tight">
 									Start your Application
 								</h2>
 								<p className="font-['Poppins'] font-[500] text-[15px] text-gray-500 ">
@@ -190,7 +205,7 @@ function Application() {
 				</div>
 				{/* ✔ */}
 				<div className={`${active ? 'flex' : 'hidden'} bg-gray-100 w-full`}>
-					<div className='mr-[60px] mt-[100px] ml-[50px]'>
+					<div className='hidden sm:block mr-[60px] mt-[200px] mb-[50px] lg:mb-0 lg:mt-[100px] ml-[50px]'>
 						<div className='flex items-start '>
 							<div className='flex flex-col justify-start space-y-5'>
 								<div
@@ -201,7 +216,7 @@ function Application() {
 										{page > 0 ? '✔' : '1'}
 									</p>
 								</div>
-								<img src={line} alt='' className='h-[200px] w-full' />
+								<img src={line} alt='' className='h-2 sm:h-[200px] w-full' />
 							</div>
 						</div>
 
@@ -211,11 +226,11 @@ function Application() {
 									className={`flex items-center justify-center w-[30px] h-[30px] rounded-[50%] ${
 										page === 1 ? 'bg-green-400' : 'bg-white'
 									} text-white`}>
-									<p className={`${page === 0 ? 'text-black' : 'text-white'} `}>
+									<p className={`${page === 1 ? 'text-black' : 'text-white'} `}>
 										{page > 1 ? '✔' : '2'}
 									</p>
 								</div>
-								<img src={line} alt='' className='h-[200px] w-full' />
+								<img src={line} alt='' className='h-2 sm:h-[200px] w-full' />
 							</div>
 						</div>
 
@@ -225,11 +240,11 @@ function Application() {
 									className={`flex items-center justify-center w-[30px] h-[30px] rounded-[50%] ${
 										page === 2 ? 'bg-green-400' : 'bg-white'
 									} text-white`}>
-									<p className={`${page === 0 ? 'text-black' : 'text-white'} `}>
+									<p className={`${page === 1 ? 'text-black' : 'text-white'} `}>
 										{page > 2 ? '✔' : '3'}
 									</p>
 								</div>
-								<img src={line} alt='' className='h-[200px] w-full' />
+								<img src={line} alt='' className='h-2 sm:h-[200px] w-full' />
 							</div>
 						</div>
 
@@ -239,7 +254,7 @@ function Application() {
 									className={`flex items-center justify-center w-[30px] h-[30px] rounded-[50%] ${
 										page === 3 ? 'bg-green-400' : 'bg-white'
 									} text-white`}>
-									<p className={`${page === 0 ? 'text-black' : 'text-white'} `}>
+									<p className={`${page === 1 ? 'text-black' : 'text-white'} `}>
 										{page > 3 ? '✔' : '4'}
 									</p>
 								</div>
@@ -247,9 +262,81 @@ function Application() {
 						</div>
 					</div>
 					<div></div>
-					<div className='flex-1 mt-[120px]'>
-						<div className='header'>
-							<h1 className="font-['Poppins'] font-[700] text-[48px] text-gray-900 tracking-tight">
+					<div className='flex-1 mt-10 lg:mt-[120px]'>
+						<Link
+							to='/'
+							className="lg:hidden font-['Tapestry'] font-900 text-[40px] tracking-widest cursor-pointer flex justify-end">
+							{sym} ZIJELA
+						</Link>
+						<div className='flex justify-between items-start sm:hidden'>
+							{/* THE START */}
+							<div className='flex items-start my-[60px]'>
+								<div className='flex flex-col justify-start '>
+									<div
+										className={`flex items-center justify-center w-[30px] h-[30px] rounded-[50%] ${
+											page === 0 ? 'bg-green-400' : 'bg-white'
+										} text-white`}>
+										<p
+											className={`${
+												page === 0 ? 'text-black' : 'text-white'
+											} `}>
+											{page > 0 ? '✔' : '1'}
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div className='flex items-start my-[60px]'>
+								<div className='flex flex-col justify-start '>
+									<div
+										className={`flex items-center justify-center w-[30px] h-[30px] rounded-[50%] ${
+											page === 1 ? 'bg-green-400' : 'bg-white'
+										} text-white`}>
+										<p
+											className={`${
+												page === 0 ? 'text-black' : 'text-white'
+											} `}>
+											{page > 1 ? '✔' : '2'}
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div className='flex items-start my-[60px]'>
+								<div className='flex flex-col justify-start '>
+									<div
+										className={`flex items-center justify-center w-[30px] h-[30px] rounded-[50%] ${
+											page === 2 ? 'bg-green-400' : 'bg-white'
+										} text-white`}>
+										<p
+											className={`${
+												page === 0 ? 'text-black' : 'text-white'
+											} `}>
+											{page > 2 ? '✔' : '3'}
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div className='flex items-start my-[60px]'>
+								<div className='flex flex-col justify-start '>
+									<div
+										className={`flex items-center justify-center w-[30px] h-[30px] rounded-[50%] ${
+											page === 3 ? 'bg-green-400' : 'bg-white'
+										} text-white`}>
+										<p
+											className={`${
+												page === 0 ? 'text-black' : 'text-white'
+											} `}>
+											{page > 3 ? '✔' : '4'}
+										</p>
+									</div>
+								</div>
+							</div>
+							{/* THE END */}
+						</div>
+						<div className='sm:mt-[120px] lg:mt-0'>
+							<h1 className="font-['Poppins'] font-[700] text-[40px] xl:text-[48px] text-gray-900 tracking-tight">
 								{FormTitles[page]}
 							</h1>
 							<p className="font-['Poppins'] font-[500] text-[15px] text-gray-500 ">

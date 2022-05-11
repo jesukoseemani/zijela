@@ -11,9 +11,8 @@ function TrackWebDescription() {
 						Learn <br /> Web Development
 					</h2>
 					<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500 mt-8 mb-[25px]  ">
-						With our integrated CRM, project management, collaboration and
-						invoicing capabilities, you can manage every aspect of your business
-						in one secure platform.
+						Learn the nuance of the web and create user-centered and efficient
+						web pages to solve real-world problems.
 					</p>
 					<div className='flex space-x-3'>
 						<Link
