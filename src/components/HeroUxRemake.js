@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Image1 from '../assets/undraw_design_sprint_re_tke3.svg';
+import Image1 from '../assets/picto4.png';
 import check from '../assets/Checkbox.svg';
 
 function HeroUxRemake({ openModal }) { 

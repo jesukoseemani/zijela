@@ -4,9 +4,7 @@ const useForm = (callback, validate) => {
 	const [values, setValues] = useState({
 		firstName: '',
 		lastName: '',
-		email: '',
 		phone: '',
-		track: '',
 		gender: '',
 		age_range: '',
 		country: '',
@@ -23,6 +21,7 @@ const useForm = (callback, validate) => {
 	});
 	const [errors, setErrors] = useState({});
 	const [isSubmitting, setIsSubmitting] = useState(false);
+	const [focused, setFocused] = useState(false);
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
@@ -32,14 +31,16 @@ const useForm = (callback, validate) => {
 		});
 	};
 
+	const handleFocus = (e) => {
+		setFocused(true);
+	};
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
 		// setErrors(validate(values));
 		setIsSubmitting(true);
 	};
-
-  
 
 	useEffect(() => {
 		if (Object.keys(errors).length === 0 && isSubmitting) {

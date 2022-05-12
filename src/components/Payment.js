@@ -22,13 +22,13 @@ function Payment() {
 				<h2 className="font-['Poppins'] font-[700] text-[30px] text-gray-900 tracking-tight my-[40px]">
 					Payment Options
 				</h2>
-				<div className='flex items-start justify-start max-w-[500px] mx-auto'>
+				<div className='flex items-start justify-start mx-auto'>
 					<img src={office} alt='' />
 					<div className='ml-5'>
 						<h3 className="font-['Poppins'] font-[700] text-[20px] text-gray-900 tracking-tight mt-6">
 							With Our Consultants
 						</h3>
-						<p className="font-['Poppins'] font-[500] text-[15px] text-gray-500 ">
+						<p className="font-['Poppins'] font-[500] text-[15px] max-w-[400px] text-gray-500 ">
 							Make an appointment with one of our educational consultants and
 							receive all the information you need to make the payment from your
 							bank.
@@ -36,19 +36,19 @@ function Payment() {
 					</div>
 				</div>
 
-				<div className='flex items-start my-[60px] justify-start max-w-[500px] mx-auto'>
+				<div className='flex items-start my-[60px] justify-start mx-auto'>
 					<img src={payment} alt='' />
 					<div className='ml-5'>
 						<h3 className="font-['Poppins'] font-[700] text-[20px] text-gray-900 tracking-tight mt-6">
 							Wire Transfer
 						</h3>
-						<p className="font-['Poppins'] font-[500] text-[15px] text-gray-500 ">
+						<p className="font-['Poppins'] font-[500] text-[15px] text-gray-400 max-w-[500px] ">
 							We use paystack to make payment swift and easy.
 						</p>
 					</div>
 				</div>
 
-				<div className='flex items-start my-[60px] justify-start max-w-[500px] mx-auto'>
+				<div className='flex items-start my-[60px] justify-start mx-auto'>
 					<Link
 						to='/register'
 						className="bg-[#22C55E] px-7 py-4 rounded-md font-['Poppins'] font-[500] text-[18px] text-[#F0FDF4]">

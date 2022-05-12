@@ -8,13 +8,53 @@ import { validate, validateInfoFirst } from './validateInfo';
 import ProfessionalExperience from './ProfessionalExperience';
 import Device from './Device';
 import MoreAbout from './MoreAbout';
+import { db } from './firebase-config';
+import { collection, addDoc } from 'firebase/firestore';
+import { useNavigate } from 'react-router';
 
 function Application() {
 	const [page, setPage] = useState(0);
-	const [isSubmitted, setIsSubmitted] = useState(false);
 	const [active, setActive] = useState(false);
+	const [loading, setLoading] = useState(false);
 	const [formOneError, setFormOneError] = useState();
 	const [formSOne, setFormSOne] = useState();
+	const [message, setMessage] = useState('');
+	const [detailRes, setDetailRes] = useState({
+		email: '',
+		track: '',
+	});
+	const [values, setValues] = useState({
+		firstName: '',
+		lastName: '',
+		phone: '',
+		gender: '',
+		age_range: '',
+		country: '',
+		state: '',
+		category: '',
+		course_study: '',
+		program_experience: '',
+		device: '',
+		own_laptop: '',
+		good_internet: '',
+		employed: '',
+		studying_prof: '',
+		comment: '',
+	});
+
+	const handleChangeDetails = (e) => {
+		const { name, value } = e.target;
+		setDetailRes({
+			...detailRes,
+			[name]: value,
+		});
+	};
+
+	const onChange = (e) => {
+		setValues({ ...values, [e.target.name]: e.target.value });
+	};
+
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const formOne = JSON.parse(localStorage.getItem('formOne'));
@@ -24,29 +64,42 @@ function Application() {
 		}
 	}, []);
 
-	function submitForm() {
-		setIsSubmitted(true);
-	}
+	// function submitForm() {
+	// 	setIsSubmitted(true);
+	// }
 
-	const { handleChange, handleSubmit, values, errors, setErrors } = useForm(
-		submitForm,
-		validate
-	);
+	// const { handleChange, handleSubmit, values, errors, setErrors } = useForm(
+	// 	submitForm,
+	// 	validate
+	// );
+
+	const usersCollectionRef = collection(db, 'users');
 
 	const handleSwitch = (e) => {
 		e.preventDefault();
 		// setErrors(validate(values));
 		setFormOneError(
-			validateInfoFirst({ track: values.track, email: values.email })
+			validateInfoFirst({ track: detailRes.track, email: detailRes.email })
 		);
-		if (values.track !== '' && values.email !== '') {
+		if (detailRes.track !== '' && detailRes.email !== '') {
 			setActive(true);
 			localStorage.setItem(
 				'formOne',
-				JSON.stringify({ track: values.track, email: values.email })
+				JSON.stringify({ track: detailRes.track, email: detailRes.email })
 			);
 		}
 		// console.log('values:', { track: values.track, email: values.email });
+	};
+
+	const createUser = async () => {
+		setLoading(true);
+		await addDoc(usersCollectionRef, {
+			...values,
+			emailAddress: formSOne.email,
+			tracks: formSOne.track,
+		});
+		setLoading(false);
+		navigate('/success');
 	};
 
 	const FormTitles = [
@@ -60,46 +113,37 @@ function Application() {
 		if (page === 0) {
 			return (
 				<PersonalDetails
-					handleChange={handleChange}
-					handleSubmit={handleSubmit}
+					setValues={setValues}
 					values={values}
-					errors={errors}
-					setErrors={setErrors}
-					validate={validate}
 					formOne={formSOne}
+					onChange={onChange}
 				/>
 			);
 		} else if (page === 1) {
 			return (
 				<ProfessionalExperience
-					handleChange={handleChange}
-					handleSubmit={handleSubmit}
 					values={values}
-					errors={errors}
-					setErrors={setErrors}
-					validate={validate}
+					setValues={setValues}
+					formOne={formSOne}
+					onChange={onChange}
 				/>
 			);
 		} else if (page === 2) {
 			return (
 				<Device
-					handleChange={handleChange}
-					handleSubmit={handleSubmit}
 					values={values}
-					errors={errors}
-					setErrors={setErrors}
-					validate={validate}
+					setValues={setValues}
+					formOne={formSOne}
+					onChange={onChange}
 				/>
 			);
 		} else {
 			return (
 				<MoreAbout
-					handleChange={handleChange}
-					handleSubmit={handleSubmit}
 					values={values}
-					errors={errors}
-					setErrors={setErrors}
-					validate={validate}
+					setValues={setValues}
+					formOne={formSOne}
+					onChange={onChange}
 				/>
 			);
 		}
@@ -162,8 +206,8 @@ function Application() {
 										type='email'
 										name='email'
 										placeholder='Enter your email address'
-										value={values.email}
-										onChange={handleChange}
+										value={detailRes.email}
+										onChange={handleChangeDetails}
 									/>
 									{formOneError?.email && (
 										<p className='text-red-800 text-[15px]'>
@@ -180,8 +224,8 @@ function Application() {
 										type='track'
 										name='track'
 										placeholder='Enter your track'
-										value={values.track}
-										onChange={handleChange}>
+										value={detailRes.track}
+										onChange={handleChangeDetails}>
 										<option value=''>Please choose one</option>
 										<option value='web development'>Web Development</option>
 										<option value='ui/ux'>UI/UX Design</option>
@@ -345,7 +389,8 @@ function Application() {
 							</p>
 						</div>
 						<div className='body'>{PageDisplay()}</div>
-						<div className='flex justify-end items-center mt-[60px]'>
+						<p className='text-red-700 text-center'>{message}</p>
+						<div className='flex justify-end items-center mt-[60px] mb-[40px]'>
 							<button
 								className='text-[18px] text-[#22C55E] font-800 mr-20 cursor-pointer'
 								disabled={page === 0}
@@ -355,16 +400,23 @@ function Application() {
 								Go back
 							</button>
 							<button
-								className=' bg-[#22C55E] text-[18px] outline-none rounded-md text-white py-[10px] px-[34px] '
+								className={`${
+									loading ? 'bg-orange-300' : 'bg-[#22C55E]'
+								} text-[18px] outline-none rounded-md text-white py-[10px] px-[34px] `}
 								onClick={() => {
 									if (page === FormTitles.length - 1) {
-										alert('FORM SUBMITTED');
+										// alert('FORM SUBMITTED');
 										// console.log(formData);
+										createUser();
 									} else {
 										setPage((currPage) => currPage + 1);
 									}
 								}}>
-								{page === FormTitles.length - 1 ? 'Submit' : 'Proceed'}
+								{loading
+									? 'Loading...'
+									: page === FormTitles.length - 1
+									? 'Submit'
+									: 'Proceed'}
 							</button>
 						</div>
 					</div>

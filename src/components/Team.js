@@ -41,7 +41,7 @@ function Team() {
 			<ReUseHeader
 				title='TEAM'
 				description='Meet our team'
-				descriptionContent='Highly professional and capable of running your business across all digital channels.'
+				descriptionContent='At Zijela ICT, our team members are made up of people who are excellent at their skills.'
 			/>
 			<div className='w-full grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 px-10 xl:px-0 xl:grid-cols-3 py-[64px] gap-4 justify-items-center '>
 				{data.map((item) => (

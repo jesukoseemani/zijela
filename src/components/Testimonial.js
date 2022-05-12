@@ -47,7 +47,8 @@ function Testimonial() {
 					Testimonial from Zijela Students
 				</h3>
 				<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500 px-10 xl:px-0">
-					With Flex, you can build websites without writing code.
+					Here is what our elite scholars have to say about their experience at
+					the academy.
 				</p>
 				<div className='w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-1 lg:justify-center gap-5 py-[64px] px-10 xl:px-0'>
 					{data.map((item) => (

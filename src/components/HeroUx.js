@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Image1 from '../assets/foruidesign.png';
+import Image1 from '../assets/picto3.png';
 import check from '../assets/Checkbox.svg';
 
 function HeroUx({ title, openModal }) {

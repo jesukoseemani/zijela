@@ -62,7 +62,7 @@ function Faq() {
 						Have any additional questions?
 					</h2>
 					<p className="font-['Poppins'] font-[400] text-[15px] md:text-[15px] lg:text-[20px] text-center text-gray-500 md:text-left ">
-						Flex is a Small SaaS Business. Flex isn’t a traditional company.
+						We are always available to respond to any questions you have.
 					</p>
 					<Link
 						to='/contact'

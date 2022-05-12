@@ -5,13 +5,13 @@ function ShowData() {
 	return (
 		<div className='max-w-[1150px] m-auto'>
 			<div className='px-10 xl:px-0'>
-				<h3 className="font-['Poppins'] font-[700] text-[35px] md:text-[35px] lg:text-[48px] text-gray-900 tracking-tight ">
+				{/* <h3 className="font-['Poppins'] font-[700] text-[35px] md:text-[35px] lg:text-[48px] text-gray-900 tracking-tight ">
 					We believe in the power of data
 				</h3>
 				<p className="font-['Poppins'] font-[500] text-[15px] md:text-[15px] lg:text-[20px] text-gray-500  ">
 					Flex is the only business platform that lets you run your business on
 					one <br /> platform, seamlessly across all digital channels.
-				</p>
+				</p> */}
 				<div className='flex items-center flex-col md:flex-row'>
 					<div className='flex-1 flex items-center justify-start flex-wrap'>
 						<div className='w-[262px] h-[162px] flex flex-col justify-center items-center text-center mt-8'>

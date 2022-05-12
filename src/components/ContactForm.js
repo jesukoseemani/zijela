@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import ReUseHeader from './ReUseHeader';
 import email from '../assets/email.svg';
 import phone from '../assets/Telephone.svg';
@@ -10,12 +11,48 @@ import instagram from '../assets/InstagramC.svg';
 import linkedIn from '../assets/LinkedInC.svg';
 
 function ContactForm() {
+	const [message, setMessage] = useState('');
+	const [active, setActive] = useState(false);
+	const [values, setValues] = useState({
+		message: '',
+		email: '',
+	});
+
+	const onChange = (e) => {
+		setValues({ ...values, [e.target.name]: e.target.value });
+	};
+
+	const submitHandler = () => {
+		setActive(true);
+
+		try {
+			emailjs
+				.send(
+					'service_cy390zb',
+					'template_xov2shl',
+					values,
+					'user_sdimx2A5fRhfzz24bzq1l'
+				)
+				.then((res) => {
+					setActive(false);
+
+					setMessage('Thank you, we will reach out soon');
+					setValues({ message: '', email: '' });
+				});
+		} catch (err) {
+			setActive(false);
+
+			alert('failed to submit form');
+
+			console.log(err);
+		}
+	};
 	return (
 		<div className='max-w-[1150px] m-auto px-10 xl:px-0'>
 			<ReUseHeader
 				title='CONTACT'
 				description='Let’s stay connected'
-				descriptionContent="It's never been easier to get in touch with Flex. Call us, use our live chat widget or email and we'll get back to you as soon as possible!"
+				descriptionContent="It's never been easier to get in touch with ZIJELA. Call us or email and we'll get back to you as soon as possible!"
 			/>
 			<div className='flex flex-col md:flex-row justify-center items-center my-[44px] sm:my-[88px]'>
 				<div className='flex-1 flex flex-wrap'>
@@ -99,6 +136,7 @@ function ContactForm() {
 							name='email'
 							type='text'
 							placeholder='YourEmail@email.com'
+							onChange={onChange}
 							className='py-6 pl-3 border border-solid border-[#D5DAE1] rounded-md mt-[6px]'
 						/>
 					</div>
@@ -110,12 +148,15 @@ function ContactForm() {
 							name='message'
 							rows='18'
 							maxlength='200'
+							onChange={onChange}
 							className='py-2 pl-2 border border-solid border-[#D5DAE1] rounded-md mt-[6px]'
 						/>
 					</div>
 
-					<button className='w-full bg-[#22C55E] outline-none rounded-md text-white py-[14px] text-[18px] mt-14'>
-						Send
+					<button
+						onClick={submitHandler}
+						className='w-full bg-[#22C55E] outline-none rounded-md text-white py-[14px] text-[18px] mt-14'>
+						{active ? 'Submitting...' : 'Send'}
 					</button>
 				</div>
 			</div>

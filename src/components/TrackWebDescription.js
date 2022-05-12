@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Image1 from '../assets/middle.png';
+import Image1 from '../assets/picto1.png';
 
 function TrackWebDescription() {
 	return (

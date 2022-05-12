@@ -5,12 +5,6 @@ export function validate(values) {
 		errors.firstName = 'Firstname required';
 	}
 
-	if (!values.email) {
-		errors.email = 'Email required';
-	} else if (!/\S+@\S+\.\S+/.test(values.email)) {
-		errors.email = 'Email address is invalid';
-	}
-
 	if (!values.gender.trim()) {
 		errors.gender = 'Gender required';
 	}
@@ -35,9 +29,6 @@ export function validate(values) {
 	}
 	if (!values.phone.trim()) {
 		errors.phone = 'Phone required';
-	}
-	if (!values.track.trim()) {
-		errors.track = 'Track required';
 	}
 	if (!values.program_experience.trim()) {
 		errors.program_experience = 'Program_experience required';

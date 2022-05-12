@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import image from '../assets/undraw_experience_design_eq-3-j.svg';
+import image from '../assets/picto6.png';
 import check from '../assets/Checkbox.svg';
 import { AnimateSharedLayout } from 'framer-motion';
 import Toggle from './Toggle';
