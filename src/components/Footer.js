@@ -36,11 +36,11 @@ function Footer() {
 				<div className='max-w-[1150px] m-auto flex justify-between items-start h-[211px] pt-8 z-50 px-10 xl:px-0'>
 					<div className='flex-1 '>
 						<p className="font-['Poppins'] font-[500] text-[14px] text-[#000000] ">
-							© 2021 Flex. All rights reserved.
+							© 2021 Zijela ICT. All rights reserved.
 						</p>
 					</div>
 
-					<div className='flex-1 flex space-x-8 items-center justify-end'>
+					<div className='flex-1 flex flex-col items-end space-y-8 md:space-y-0 md:flex-row md:space-x-8 md:items-center md:justify-end'>
 						<li className='list-none'>
 							<a href='https://www.facebook.com/zijelaict/'>
 								<img src={facebook} alt='' />

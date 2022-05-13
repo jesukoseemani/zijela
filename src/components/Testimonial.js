@@ -50,7 +50,7 @@ function Testimonial() {
 					Here is what our elite scholars have to say about their experience at
 					the academy.
 				</p>
-				<div className='w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-1 lg:justify-center gap-5 py-[64px] px-10 xl:px-0'>
+				<div className='w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-1 lg:justify-center gap-5 py-[64px] px-2 md:px-10 xl:px-0'>
 					{data.map((item) => (
 						<CardTestimony item={item} />
 					))}
