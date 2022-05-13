@@ -2,7 +2,7 @@ import React from 'react';
 
 function CardTestimony({ item }) {
 	return (
-		<div className='w-full lg:w-[359px] h-[404px] rounded-md bg-white flex flex-col items-start justify-between p-8'>
+		<div className='w-full lg:w-[359px] h-[604px] rounded-md bg-white flex flex-col items-start justify-between p-8'>
 			<div>
 				<h3 className="font-['Poppins'] font-[500] text-[24px] text-gray-900">
 					{item.content}

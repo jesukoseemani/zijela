@@ -125,6 +125,7 @@ function Application() {
 		);
 		setLoading(false);
 		navigate('/success');
+		window.localStorage.clear();
 	};
 
 	const FormTitles = [
