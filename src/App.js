@@ -28,7 +28,7 @@ function App() {
 		}
 	return (
 		<div className='w-full m-auto scrollbar-hide'>
-			<HashRouter>
+			<BrowserRouter>
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/about' element={<About />} />
@@ -60,7 +60,7 @@ function App() {
 					<Route path='/register' element={<Application />} />
 					<Route path='/success' element={<Submitted />} />
 				</Routes>
-			</HashRouter>
+			</BrowserRouter>
 		</div>
 	);
 }
