@@ -11,6 +11,7 @@ import MoreAbout from './MoreAbout';
 import { db } from './firebase-config';
 import { collection, addDoc } from 'firebase/firestore';
 import { useNavigate } from 'react-router';
+import emailjs from 'emailjs-com';
 
 function Application() {
 	const [page, setPage] = useState(0);
@@ -18,6 +19,8 @@ function Application() {
 	const [loading, setLoading] = useState(false);
 	const [formOneError, setFormOneError] = useState();
 	const [formSOne, setFormSOne] = useState();
+	const [isTrack, setIsTrack] = useState('');
+	const [isAmount, setIsAmount] = useState('');
 	const [message, setMessage] = useState('');
 	const [detailRes, setDetailRes] = useState({
 		email: '',
@@ -64,6 +67,16 @@ function Application() {
 		}
 	}, []);
 
+	useEffect(() => {
+		if (formSOne && formSOne.track === 'web development') {
+			setIsTrack('Web Development');
+			setIsAmount('₦200,000');
+		} else {
+			setIsTrack('UI/UX Design');
+			setIsAmount('₦50,000');
+		}
+	}, [formSOne]);
+
 	// function submitForm() {
 	// 	setIsSubmitted(true);
 	// }
@@ -98,6 +111,18 @@ function Application() {
 			emailAddress: formSOne.email,
 			tracks: formSOne.track,
 		});
+		await emailjs.send(
+			'service_bxlvdfw',
+			'template_7606e7t',
+			{
+				...values,
+				track: isTrack,
+				amount: isAmount,
+				emailAddress: formSOne.email,
+				tracks: formSOne.track,
+			},
+			'lgaKS4Z8AW7qXOUjR'
+		);
 		setLoading(false);
 		navigate('/success');
 	};

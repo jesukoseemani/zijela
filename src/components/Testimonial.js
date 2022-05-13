@@ -5,40 +5,40 @@ function Testimonial() {
 	const data = [
 		{
 			content:
-				'The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.',
-			name: 'Oluwadolabomi',
-			position: 'Cohurt 1957',
+				'I have always had passion for programming, however, I have found myself running a tutorial hell. I am priviledged to be a participant in the first cohort on Zijela web development training. It set my feet aright with guided learnings. I am forever grateful for this opportunity',
+			name: 'Abiodun Adu',
+			position: 'Cohurt 2021',
 		},
 		{
 			content:
-				'The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.',
-			name: 'Oluwadolabomi',
-			position: 'Cohurt 1957',
+				'My experience with Zijela has been undoubtedly positive, making my journey and experience in the tech world a great one with their amazing mentors and instructors.I am very thankful to them for their kind support and perfect guidance through this stage.Zijela has a remarkable structure and adequate training skills for students.',
+			name: 'Prince Ephraim',
+			position: 'Cohurt 2021',
 		},
 		{
 			content:
-				'The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.',
-			name: 'Oluwadolabomi',
-			position: 'Cohurt 1957',
+				'One of the best. it was a great experience and good foundation for my learning growth and development.',
+			name: 'Damilare Arifo',
+			position: 'Cohurt 2021',
 		},
-		{
-			content:
-				'The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.',
-			name: 'Oluwadolabomi',
-			position: 'Cohurt 1957',
-		},
-		{
-			content:
-				'The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.',
-			name: 'Oluwadolabomi',
-			position: 'Cohurt 1957',
-		},
-		{
-			content:
-				'The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.',
-			name: 'Oluwadolabomi',
-			position: 'Cohurt 1957',
-		},
+		// {
+		// 	content:
+		// 		'The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.',
+		// 	name: 'Oluwadolabomi',
+		// 	position: 'Cohurt 2021',
+		// },
+		// {
+		// 	content:
+		// 		'The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.',
+		// 	name: 'Oluwadolabomi',
+		// 	position: 'Cohurt 2021',
+		// },
+		// {
+		// 	content:
+		// 		'The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.',
+		// 	name: 'Oluwadolabomi',
+		// 	position: 'Cohurt 2021',
+		// },
 	];
 	return (
 		<div className='bg-[#F7F8F9] mt-[88px] my-line '>
