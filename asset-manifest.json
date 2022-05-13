@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.07a44f0f.css",
-    "main.js": "./static/js/main.e95ecd98.js",
+    "main.css": "./static/css/main.bc4defb2.css",
+    "main.js": "./static/js/main.aeece541.js",
     "static/js/787.8b728e04.chunk.js": "./static/js/787.8b728e04.chunk.js",
     "static/media/john-schnobrich-2FPjlAyMQTA-unsplash.jpg": "./static/media/john-schnobrich-2FPjlAyMQTA-unsplash.26cb540ede2b7051b6f2.jpg",
     "static/media/daniel-charles-hextall-6LqEzeYigGY-unsplash (1).jpg": "./static/media/daniel-charles-hextall-6LqEzeYigGY-unsplash (1).067eaa04caf6f5f7392c.jpg",
+    "static/media/picto1.png": "./static/media/picto1.42e566edbe71f5990fbd.png",
     "static/media/top.png": "./static/media/top.a297d12b2013b08f926e.png",
-    "static/media/middle.png": "./static/media/middle.53ebe58f5c1c0b735a24.png",
-    "static/media/foruidesign.png": "./static/media/foruidesign.c764fadde198f17ce45e.png",
+    "static/media/picto2.png": "./static/media/picto2.f8c35f7dc115debe95dc.png",
+    "static/media/picto6.png": "./static/media/picto6.521801db3629cae86887.png",
+    "static/media/picto3.png": "./static/media/picto3.1d744433c694d6caa107.png",
+    "static/media/picto4.png": "./static/media/picto4.726daba28bbc63bcfebf.png",
+    "static/media/Picto55.png": "./static/media/Picto55.03d1442cab3e1ff20401.png",
     "static/media/last.png": "./static/media/last.e503f1e831555869355c.png",
     "static/media/MasterCard_Logo.svg.png": "./static/media/MasterCard_Logo.svg.e4f384027f759ede964e.png",
     "static/media/team.png": "./static/media/team.c50664e3b1ea9dbf268e.png",
-    "static/media/whattolearn.jpeg": "./static/media/whattolearn.aca288b0950ddc9e0847.jpeg",
     "static/media/INFRACTURE.jpeg": "./static/media/INFRACTURE.adaee2aceb46a59394ad.jpeg",
-    "static/media/undraw_experience_design_eq-3-j.svg": "./static/media/undraw_experience_design_eq-3-j.09156709f55162923ea70286e9efd81c.svg",
-    "static/media/undraw_design_sprint_re_tke3.svg": "./static/media/undraw_design_sprint_re_tke3.d74506abe6a98dc0adc69a3aa322902b.svg",
     "static/media/undraw_code_thinking_re_gka2 (1).svg": "./static/media/undraw_code_thinking_re_gka2 (1).d98ce6b673d1346f6d21f1f474ab8d29.svg",
     "static/media/paystack-2.svg": "./static/media/paystack-2.21a0667a62d2708f324e4fb25085e1eb.svg",
     "static/media/office.svg": "./static/media/office.b5dd918eafa97d5204186ec19b6df057.svg",
@@ -31,6 +32,7 @@
     "index.html": "./index.html",
     "static/media/Facebook.svg": "./static/media/Facebook.f4a4bfad63a85bf3b37958ed227b53f0.svg",
     "static/media/FacebookC.svg": "./static/media/FacebookC.abba5ab6ff90c18df625cb1ba3d034db.svg",
+    "static/media/messageImage.svg": "./static/media/messageImage.8e796e323c7ba4f77f6428334a2ca436.svg",
     "static/media/LinkedIn.svg": "./static/media/LinkedIn.dbd18e576814ca837d330d23cb3e67dc.svg",
     "static/media/LinkedInC.svg": "./static/media/LinkedInC.8d91ba68d01ab023c599d5ff24cd7feb.svg",
     "static/media/social.svg": "./static/media/social.16aeb6eea0b85ca799e940e342a9ec06.svg",
@@ -38,12 +40,12 @@
     "static/media/chevron-up-outline.svg": "./static/media/chevron-up-outline.99c0a5983627e2e09bdc95260cab4070.svg",
     "static/media/chevron-down-outline (1).svg": "./static/media/chevron-down-outline (1).adeda2e8053318ce2df9231a6a25a9e7.svg",
     "static/media/close-outline (1).svg": "./static/media/close-outline (1).06cdf2fdfaa846be640665c476f77d3c.svg",
-    "main.07a44f0f.css.map": "./static/css/main.07a44f0f.css.map",
-    "main.e95ecd98.js.map": "./static/js/main.e95ecd98.js.map",
+    "main.bc4defb2.css.map": "./static/css/main.bc4defb2.css.map",
+    "main.aeece541.js.map": "./static/js/main.aeece541.js.map",
     "787.8b728e04.chunk.js.map": "./static/js/787.8b728e04.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07a44f0f.css",
-    "static/js/main.e95ecd98.js"
+    "static/css/main.bc4defb2.css",
+    "static/js/main.aeece541.js"
   ]
 }
